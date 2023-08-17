@@ -1,3 +1,8 @@
+# React Code Example
+
+Here's an example using React, the React Navigation library, and a `BottomSheetDialog` component:
+
+```javascript
 import React from 'react';
 import BottomSheetDialog from "./components/BottomSheetDialog";
 import { CardStyleInterpolators, StackNavigationOptions } from '@react-navigation/stack'
@@ -11,7 +16,6 @@ export const dialogScreenOptions: StackNavigationOptions = {
     cardOverlayEnabled: true,
     detachPreviousScreen: false // Prevent android from detaching the background screen
 }
-
 
 // And in the component that will be called on the Screen, I encapsulate it in the `BottomSheetDialog` component.
 // For example: <Stack.Screen name='ComponentExample' component={ComponentExample} options={dialogScreenOptions} />
